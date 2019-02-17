@@ -18,5 +18,5 @@ In my project I have several classes:
 
 In order to explain how it works, I am going to show it using several diagrams:
 Factory Design Pattern:
-![alt text](FactoryMethod.PNG "Logo Title Text 1")
+![alt text](DiagramsAndScreens/FactoryMethod.PNG "Logo Title Text 1")
 
