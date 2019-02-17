@@ -26,7 +26,8 @@ To combine abstract factory and factory method, according to a book: factory met
 The Pizza is prepared using the Builder Pattern:  
 ![alt text](DiagramsAndScreens/Builder.PNG "Logo Title Text 1")
 
-Also we can clone pizzas using Prototype Pattern: 
+Also we can clone pizzas using Prototype Pattern:
+
 ![alt text](DiagramsAndScreens/Prototype.PNG "Logo Title Text 1")
 
 Also earlier I mentioned that Franchise use a Singleton (only one Instance can exist) and provide us with an instance of a PizzaNetwork class that we use to create PizzaStores.
