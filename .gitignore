@@ -244,6 +244,3 @@ paket-files/
 
 # CodeRush
 .cr/
-src/Services/BPMN.API/dist/
-src/Services/BPMN.API/documentation/
-src/UI/MVC/wwwroot/
