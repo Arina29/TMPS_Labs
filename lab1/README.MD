@@ -13,9 +13,10 @@ In my project I have several classes:
 1. _Franchise_  - it uses singleton design pattern and provide us with a pizzaNetwork instance
 2. _PizzaNetwork_ - create Andy's pizza store and Corso pizza store
 3. _PizzaStore_ and _Pizza_ - use Factory Method Pattern
-4._Pizza_ are made using the Builder Design Pattern
-5._IngredientsFactory_ uses Abstract Factory Design Pattern 
+4. _Pizza_ are made using the Builder Design Pattern
+5. _IngredientsFactory_ uses Abstract Factory Design Pattern 
 
 In order to explain how it works, I am going to show it using several diagrams:
 Factory Design Pattern:
+![alt text](DiagramsAndScreens/FactoryMethod.PNG "Logo Title Text 1")
 
