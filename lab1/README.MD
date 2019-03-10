@@ -17,6 +17,24 @@ In my project I have several classes:
 5. _IngredientsFactory_ uses Abstract Factory Design Pattern 
 
 In order to explain how it works, I am going to show it using several diagrams:
-Factory Design Pattern:
+Factory Design Pattern: 
 ![alt text](DiagramsAndScreens/FactoryMethod.PNG "Logo Title Text 1")
+
+To combine abstract factory and factory method, according to a book: factory methods was used to implement product methods in abstract factory (CreateDough(), CreateCheese(),...)
+![alt text](DiagramsAndScreens/AbstractFactory.PNG "Logo Title Text 1")
+
+The Pizza is prepared using the Builder Pattern:  
+![alt text](DiagramsAndScreens/Builder.PNG "Logo Title Text 1")
+
+Also we can clone pizzas using Prototype Pattern:
+
+![alt text](DiagramsAndScreens/Prototype.PNG "Logo Title Text 1")
+
+Also earlier I mentioned that Franchise use a Singleton (only one Instance can exist) and provide us with an instance of a PizzaNetwork class that we use to create PizzaStores.
+![alt text](DiagramsAndScreens/Franchise.PNG "Logo Title Text 1")
+
+And this is how I use them: 
+![alt text](DiagramsAndScreens/Result.PNG "Logo Title Text 1")
+
+
 
