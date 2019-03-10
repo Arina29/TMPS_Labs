@@ -128,7 +128,8 @@ In the screenshot below is shown how we add a new pattern to existing cloth item
   ![alt text](screens/decorator.PNG "Logo Title Text 1")  
   
 *__ProxyDesign Pattern__* - a class represents functionality of another class. Proxies are also called surrogates, handles, and wrappers. 
-In the example below I make a proxy for Blouse class, so when we create a blouse we use this proxy and it adds a new clothing accesory to the existing blouse 
+In the example below I make a proxy for Blouse class, so when we create a blouse we use this proxy and it adds a new clothing accesory to the existing blouse    
+
  ![alt text](screens/proxy.PNG "Logo Title Text 1") 
 
 
