@@ -52,8 +52,8 @@ Facade code is responsible for calling  the corresponding methods:
 
 *__Bridge Design Pattern__* - is used when we need to decouple an abstraction from its implementation so that the two can vary independently.
 If we refer to the idea  of this project, we have different types of clothes and each cloth can have different colors.And as we can see from the diagram illustrated below: I have a ClothColor  that acts as a bridge implementer, so we have decoupled Cloth from clothes colors
- ![alt text](screens/bridge.PNG "Logo Title Text 1") 
- In the code it lok so: 
+ ![alt text](screens/bridge.PNG "Logo Title Text 1")   
+ In the code it looks so:   
   ![alt text](screens/bridgeCode.PNG "Logo Title Text 1") 
   
   *__Composite Design Pattern__* - is used where we need to treat a group of objects in similar way as a single object. It describes a group of objects that is treated the same way as a single instance of the same type of object.  
