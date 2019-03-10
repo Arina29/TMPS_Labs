@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http.Headers;
 
 namespace Clothes
-{
+{   
     public abstract class Cloth
     {
         protected ClothColor _color;

@@ -42,24 +42,22 @@ namespace Clothes
 
         public void Sew()
         {
+            ClothesFacade clothesFacade = new ClothesFacade();
             switch (_departmentName)
             {
                 case Departments.Blouse:
                 {
-                    BlouseFacade blouseFacade = new BlouseFacade();
-                    blouseFacade.SewBlouse();
+                    clothesFacade.SewBlouse();
                     break;
                 }
                 case Departments.Jacket:
                 {
-                    JacketFacade jacketFacade = new JacketFacade();
-                    jacketFacade.SewJackets();
+                    clothesFacade.SewJackets();
                     break;
                 }
                 case Departments.Trousers:
                 {
-                    TrousersFacade jacketFacade = new TrousersFacade();
-                    jacketFacade.SewTrousers();
+                    clothesFacade.SewTrousers();
                     break;
                 }
             }

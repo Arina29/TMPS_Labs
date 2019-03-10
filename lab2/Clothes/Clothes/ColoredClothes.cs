@@ -16,7 +16,7 @@ namespace Clothes
     {
         public void ChooseColor()
         {
-            Console.WriteLine("\t\tsChoosing red materials for the new Blouse");
+            Console.WriteLine("\t\tChoosing red materials for the new Blouse");
         }
     }
 

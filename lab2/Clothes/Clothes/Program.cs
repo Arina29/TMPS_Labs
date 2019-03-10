@@ -10,13 +10,13 @@ namespace Clothes
     {
         static void Main(string[] args)
         {
-            Employee director = new Employee("Aurel", "Company director", null);
-            Employee headOfBlouseDepartment = new Employee("Ionel", "Head of deparment", Departments.Blouse);
-            Employee headOfTrousersDepartment = new Employee("Ionela", "Head of deparment", Departments.Trousers);
-            Employee headOfJacketDepartment = new Employee("Dorina", "Head of deparment", Departments.Jacket);
-            Employee blouseEmployee1 = new Employee("Gabi", "Seamstress", Departments.Blouse);
-            Employee trousersEmployee1 = new Employee("Gabi1", "Seamstress", Departments.Trousers);
-            Employee jacketEmployee1 = new Employee("Gabi2", "Seamstress", Departments.Jacket);
+            Employee director = new Employee("Frodo", "Company director", null);
+            Employee headOfBlouseDepartment = new Employee("Harry", "Head of deparment", Departments.Blouse);
+            Employee headOfTrousersDepartment = new Employee("Emily ", "Head of deparment", Departments.Trousers);
+            Employee headOfJacketDepartment = new Employee("John", "Head of deparment", Departments.Jacket);
+            Employee blouseEmployee1 = new Employee("Elena", "Seamstress", Departments.Blouse);
+            Employee trousersEmployee1 = new Employee("Julia", "Seamstress", Departments.Trousers);
+            Employee jacketEmployee1 = new Employee("Stefan", "Seamstress", Departments.Jacket);
             headOfBlouseDepartment.AddEmployee(blouseEmployee1);
             headOfTrousersDepartment.AddEmployee(trousersEmployee1);
             headOfJacketDepartment.AddEmployee(jacketEmployee1);

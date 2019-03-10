@@ -20,7 +20,7 @@ namespace Clothes
             _clothDecorator.ChooseColor();
         }
     }
-
+    
     public class BlueBlouseWithPatterns : ClothDecorator
     {
         public BlueBlouseWithPatterns(ClothColor _clothDecorator) : base(_clothDecorator)
