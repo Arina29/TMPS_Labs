@@ -47,6 +47,9 @@ different color.
                 }
             }
 ```
+Facade code is responsible for calling  the corresponding methods:
+ ![alt text](screens/facadeCode.PNG "Logo Title Text 1")
+
 
 
 
