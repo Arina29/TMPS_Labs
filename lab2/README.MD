@@ -20,7 +20,7 @@ In my project I have several classes:
 We have a Clothing Factory that have employees who sew different articles of clothing: blouses, trousers and leather jackets of 
 different color.
 
-### __Facade Design Pattern__ - is one of the simpler patterns and the more useful. It hides complexity which cannot be refactored away and 
+*__Facade Design Pattern__* - is one of the simpler patterns and the more useful. It hides complexity which cannot be refactored away and 
  and provides an interface to the client using which the client can access the system.  
  In my work  I use this pattern as is represented in the diagram below: 
  ![alt text](screens/facade.PNG "Logo Title Text 1")
