@@ -12,8 +12,10 @@ namespace Food
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int Amount { get; set; }
+        public CookStrategy CookStrategy { get; set; }
+        
 
-        public Pizza(string name, decimal price )
+        public Pizza(string name, decimal price)
         {
             Name = name;
             Price = price;
@@ -21,6 +23,7 @@ namespace Food
 
         public void Display()
         {
+            CookStrategy.Cook(Name);
             Console.WriteLine("Name: "+ Name);
             Console.WriteLine("Price: " + Price);
             Console.WriteLine("Amount: " + Amount);

@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace Food
 {
- 
-
     public class Order
     {
         public List<Pizza> PizzaItems { get; set; }

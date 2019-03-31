@@ -51,6 +51,7 @@ namespace Food
                     var pizza = collection[commandPizza - 1] as Pizza;
                     pizza.Amount = amount;
                     pizza.Price = pizza.Amount * pizza.Price;
+                    pizza.CookStrategy = new NeapolitanStylePizza();
 
                     client.SetMenuItem(pizza);
                     client.ExecuteCommand();
