@@ -9,6 +9,7 @@ namespace Food
     public class Order
     {
         public List<Pizza> PizzaItems { get; set; }
+        private int _pizzaCount { get; set; }
 
         public Order()
         {
@@ -17,7 +18,7 @@ namespace Food
 
         public void ExecuteCommand(ICommand command , Pizza item)
         {
-            command.Execute(PizzaItems, item);
+            command.Execute(PizzaItems, item, item.Amount);
         }
 
         public void ShowOrder()
@@ -27,17 +28,27 @@ namespace Food
                 item.Display();
             }
         }
+
+        public void GetDiscount(Order order)
+        {
+            if (order.PizzaItems.Count >= 5)
+            {
+                Console.WriteLine("Congratulation you've got a discount of 5%");
+            }
+        }
     }
 
     public class Client
     {
         private Pizza _menuItem;
         private ICommand _command;
-        private Order _order;
+        public Order Order { get; set; }
+        private int _pizzaCount;
 
         public Client()
         {
-            _order = new Order();
+            _pizzaCount = 0;
+            Order = new Order();
         }
 
         public void SetCommand(int commandOption)
@@ -52,13 +63,33 @@ namespace Food
 
         public void ExecuteCommand()
         {
-            _order.ExecuteCommand(_command, _menuItem);
+            Order.ExecuteCommand(_command, _menuItem);
         }
 
         public void ShowCurrentOrder()
         {
-            _order.ShowOrder();
+            Order.ShowOrder();
         }
+
+        public void Notify()
+        {
+            Order.GetDiscount(Order);
+        }
+
+        public int PizzaCount
+        {
+            get { return _pizzaCount; }
+            set
+            {
+                if (Order.PizzaItems.Count >= value)
+                {
+                    _pizzaCount = value;
+                    Notify();
+                }
+            }
+        }
+
+       
     }
 
     public class CommandFactory

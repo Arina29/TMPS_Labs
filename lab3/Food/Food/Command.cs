@@ -8,14 +8,17 @@ namespace Food
 {
     public interface ICommand
     {
-        void Execute(List<Pizza> order, Pizza pizzaItem);
+        void Execute(List<Pizza> order, Pizza pizzaItem, int amount);
     }
 
     public class AddCommand : ICommand
     {
-        public void Execute(List<Pizza> order, Pizza pizzaItem)
+        public void Execute(List<Pizza> order, Pizza pizzaItem, int amount )
         {
-            order.Add(pizzaItem);
+            for(var i = 0; i < amount; i++)
+            {
+                order.Add(pizzaItem);
+            }
         }
     }
 }

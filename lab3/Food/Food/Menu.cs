@@ -7,27 +7,43 @@ using System.Threading.Tasks;
 
 namespace Food
 {
-    public class Pizza
+    public class Pizza 
     {
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int Amount { get; set; }
         public CookStrategy CookStrategy { get; set; }
-        
+        public PizzaTemplate CookingTemplate { get; set; }
+        public Order order { get; set; }
 
-        public Pizza(string name, decimal price)
+        public Pizza(string name, decimal price, PizzaTemplate template)
         {
             Name = name;
             Price = price;
+            CookingTemplate = template;
+        }
+
+        public void Livrate(Pizza pizza)
+        {
+            Console.WriteLine("Livrating: " + pizza.Name);
         }
 
         public void Display()
         {
-            CookStrategy.Cook(Name);
-            Console.WriteLine("Name: "+ Name);
+            Console.WriteLine("-----------------Pizza Details-----------------");
+            Console.WriteLine("Name: " + Name);
             Console.WriteLine("Price: " + Price);
             Console.WriteLine("Amount: " + Amount);
+            Console.WriteLine("--------------Cooking Strategy-----------------");
+            CookStrategy.Cook(Name);
+            Console.WriteLine("---------------------Cooking-------------------");
+            CookingTemplate.GetIngredients();
+            CookingTemplate.Bake();
+            CookingTemplate.Slice();
+            Console.WriteLine("\n");
+ 
         }
+
     }
 
     public interface IFoodCollection

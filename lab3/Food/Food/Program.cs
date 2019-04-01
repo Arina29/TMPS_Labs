@@ -12,12 +12,10 @@ namespace Food
         static FoodCollection Menu()
         {
             FoodCollection colllection = new FoodCollection();
-            colllection[0] = new Pizza("Neapolitana", 80);
-            colllection[1] = new Pizza("Diablo", 80);
-            colllection[2] = new Pizza("Rancho", 70);
-            colllection[3] = new Pizza("Pepperoni", 80);
-            colllection[4] = new Pizza("Margherita", 85);
-            colllection[5] = new Pizza("Capricioasa", 85);
+            colllection[0] = new Pizza("Neapolitana", 80, new Neapolitana());
+            colllection[1] = new Pizza("Diablo", 80, new Diablo());
+            colllection[2] = new Pizza("Rancho", 70, new Rancho());
+            colllection[5] = new Pizza("Capricioasa", 85, new Capricioasa());
 
             Console.WriteLine("----------------------Menu---------------------");
             PizzaIterator iterator = colllection.CreateIterator();
@@ -36,12 +34,12 @@ namespace Food
             Console.WriteLine("1-AddCommand");
 
             List<Client> clientOrders = new List<Client>();
+            Client client = new Client();
             while (true)
             {
-                Console.WriteLine("Do you want to create  order?");
-                if (Console.ReadLine() == "Y")
+                Console.WriteLine("Do you want to create  order?Y/N");
+                if (Console.ReadLine() == "Y" || Console.ReadLine() == "y")
                 {
-                    Client client = new Client();
                     Console.WriteLine("Enter the pizza number:");
                     var commandPizza = int.Parse(Console.ReadLine());
                     Console.WriteLine("Enter the amount:");
@@ -56,7 +54,8 @@ namespace Food
                     client.SetMenuItem(pizza);
                     client.ExecuteCommand();
                     client.ShowCurrentOrder();
-                    clientOrders.Add(client);
+                    client.PizzaCount = client.Order.PizzaItems.Count;
+
                 }
                 else
                 {

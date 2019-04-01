@@ -47,6 +47,7 @@
     <Compile Include="Command.cs" />
     <Compile Include="CookStrategy.cs" />
     <Compile Include="Menu.cs" />
+    <Compile Include="PizzaTemplate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

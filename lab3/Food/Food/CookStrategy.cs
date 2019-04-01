@@ -9,7 +9,6 @@ namespace Food
     public abstract class CookStrategy
     {
         public abstract void Cook(string food);
-
     }
 
     class NeapolitanStylePizza : CookStrategy
