@@ -11,20 +11,20 @@ namespace Food
     {
         static FoodCollection Menu()
         {
-            FoodCollection colllection = new FoodCollection();
-            colllection[0] = new Pizza("Neapolitana", 80, new Neapolitana());
-            colllection[1] = new Pizza("Diablo", 80, new Diablo());
-            colllection[2] = new Pizza("Rancho", 70, new Rancho());
-            colllection[5] = new Pizza("Capricioasa", 85, new Capricioasa());
+            FoodCollection collection = new FoodCollection();
+            collection[0] = new Pizza("Neapolitana", 80, new Neapolitana());
+            collection[1] = new Pizza("Diablo", 80, new Diablo());
+            collection[2] = new Pizza("Rancho", 70, new Rancho());
+            collection[5] = new Pizza("Capricioasa", 85, new Capricioasa());
 
             Console.WriteLine("----------------------Menu---------------------");
-            PizzaIterator iterator = colllection.CreateIterator();
+            PizzaIterator iterator = collection.CreateIterator();
             for (Pizza item = iterator.First(); !iterator.IsDone; item = iterator.Next())
             {
                 Console.WriteLine(iterator.ItemIndex + 1 + ")" + item.Name + "\t" + item.Price + " mdl");
             }
 
-            return colllection;
+            return collection;
         }
 
         static void Main(string[] args)

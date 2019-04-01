@@ -6,6 +6,20 @@ using System.Threading.Tasks;
 
 namespace Food
 {
+    public class CommandFactory
+    {
+        public ICommand GetCommand(int commandOption)
+        {
+            switch (commandOption)
+            {
+                case 1:
+                    return new AddCommand();
+                default:
+                    return new AddCommand();
+            }
+        }
+    }
+
     public interface ICommand
     {
         void Execute(List<Pizza> order, Pizza pizzaItem, int amount);
