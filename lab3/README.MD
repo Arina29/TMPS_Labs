@@ -20,7 +20,7 @@ In my project I have several classes:
 ## General idea
 We have a client who make an order of different types of Pizza that can be cooked using different strategies and if he command more than 5 pizzas then he get a discount of 5%
 
-*__Iterator Design Pattern__* - provides a way to access objects in an underlying representation without exposing access to the representation itself.In our example  we have foodCollection  and pizzaIterator and in order to print the menu we create a food collection that consist of all types of pizza that can be cooked in our restaurant, then using iterator we print the menu on the screen
+*__Iterator Design Pattern__* - provides a way to access objects in an underlying representation without exposing access to the representation itself.In our example  we have foodCollection  and pizzaIterator and in order to print the menu we create a food collection that consist of all types of pizza that can be cooked in our restaurant, then using iterator we print the menu on the screen 
  ![alt text](screens/iterator.PNG "Logo Title Text 1")  
  ![alt text](screens/iterator2.PNG "Logo Title Text 1")
 
