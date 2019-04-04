@@ -45,5 +45,10 @@ As I mentioned the pizza is cooked using different strategies according to the c
    In my case I use observer pattern to notify the user that he get a discount of 5%, because he's command includes more than 4 pizzas.
        ![alt text](screens/observer.PNG "Logo Title Text 1") 
 
+SO the obtained results look so:  
+
+       ![alt text](screens/ex1.PNG "Logo Title Text 1")  
+       ![alt text](screens/ex2.PNG "Logo Title Text 1") 
+
 
   
