@@ -1,12 +1,7 @@
 # Laboratory Work nr.3
 ## Task 
 Create a program/app that implements all 5 behavioral design patterns
-## Choosed design patterns
-1. _Facade_
-2. _Bridge_
-3. _Composite_
-4. _Decorator_
-5. _Proxy_
+
 ## Choosed design patterns
 1. _Command_
 2. _Iterator_
